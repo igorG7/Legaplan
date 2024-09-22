@@ -49,7 +49,7 @@ export default function TodoList() {
             </div>
           </div>
 
-          <button onClick={openDeleteModal} className={styles.addButton}>
+          <button onClick={openModal} className={styles.addButton}>
             Adicionar nova tarefa
           </button>
 
@@ -58,22 +58,27 @@ export default function TodoList() {
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
           >
-            <h2 className={styles.title}>Nova tarefa</h2>
+            <div className={styles.modalContainer}>
+              <h2 className={styles.title}>Nova tarefa</h2>
 
-            <div>
-              <p className={styles.subtitle}>Título</p>
-              <input
-                type="text"
-                placeholder="Digite"
-                className={styles.input}
-              />
-            </div>
+              <div>
+                <p className={styles.subtitle}>Título</p>
+                <input
+                  type="text"
+                  placeholder="Digite"
+                  className={styles.input}
+                />
+              </div>
 
-            <div className={styles.containerButtons}>
-              <button className={styles.addButtonModal}>Adicionar</button>
-              <button className={styles.cancelButtonModal} onClick={closeModal}>
-                Cancelar
-              </button>
+              <div className={styles.containerButtons}>
+                <button className={styles.addButtonModal}>Adicionar</button>
+                <button
+                  className={styles.cancelButtonModal}
+                  onClick={closeModal}
+                >
+                  Cancelar
+                </button>
+              </div>
             </div>
           </Modal>
 
@@ -82,22 +87,24 @@ export default function TodoList() {
             isOpen={deleteModalisOpen}
             onRequestClose={closeModal}
           >
-            <h2 className={styles.title}>Deletar tarefa</h2>
+            <div className={styles.modalContainer}>
+              <h2 className={styles.title}>Deletar tarefa</h2>
 
-            <div>
-              <p className={styles.textDelete}>
-                Tem certeza que você deseja deletar essa tarefa?
-              </p>
-            </div>
+              <div>
+                <p className={styles.textDelete}>
+                  Tem certeza que você deseja deletar essa tarefa?
+                </p>
+              </div>
 
-            <div className={styles.containerButtons}>
-              <button className={styles.deleteModalButton}>Deletar</button>
-              <button
-                className={styles.cancelButtonModal}
-                onClick={closeDeleteModal}
-              >
-                Cancelar
-              </button>
+              <div className={styles.containerButtons}>
+                <button className={styles.deleteModalButton}>Deletar</button>
+                <button
+                  className={styles.cancelButtonModal}
+                  onClick={closeDeleteModal}
+                >
+                  Cancelar
+                </button>
+              </div>
             </div>
           </Modal>
         </div>
