@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@nextui-org/modal": "^2.0.41",
+    "react-modal": "^3.16.1",
     "sass": "^1.79.3"
   }
 }

@@ -65,5 +65,79 @@
       border-radius: 8px;
       background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
 
-  }
+    }  
+}
+
+.customModalContent{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    background-color: white;
+}
+
+.input{
+  width: 100%;
+  height: 50px;
+  padding: 16px;
+  margin: 8px 0;
+  border-radius: 8px ;
+  border: 1px solid #D7DDE9;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.containerButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+.addButtonModal {
+    width: 100%;
+    height: 50px;
+    margin: 16px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
+}
+
+.cancelButtonModal {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: #E7EEFB;
+}
+
+// Delete modal
+
+.deleteModalButton{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(90deg, #D30707 0%, #F05353 68.65%);
+
+}
+
+.textDelete {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
 }
