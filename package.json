@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@headlessui/react": "^2.1.8",
+    "@heroicons/react": "^2.1.5",
     "@nextui-org/modal": "^2.0.41",
     "react-modal": "^3.16.1",
     "sass": "^1.79.3"
