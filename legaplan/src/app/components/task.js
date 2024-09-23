@@ -4,7 +4,7 @@ import { Checkbox, Label, Field } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 
-export default function Task() {
+export default function Task(props) {
   const [enabled, setEnabled] = useState(true);
 
   const handleChange = () => {
@@ -29,7 +29,13 @@ export default function Task() {
         </Field>
       </div>
 
-      <Image src="/public/icon.svg" width={24} height={24} alt="Trash icon" />
+      <Image
+        onClick={props.fOpenModal}
+        src="/public/icon.svg"
+        width={24}
+        height={24}
+        alt="Trash icon"
+      />
     </li>
   );
 }
